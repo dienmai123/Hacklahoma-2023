@@ -167,7 +167,6 @@ for (let i = 0; i < userInput.length; i++) {
   }
 }
 
-
   // Loop through the CS courses
   for (let i = 0; i < csCourses.length; i++) {
   // Check if the course code is in the user input
@@ -185,6 +184,8 @@ for (let i = 0; i < userInput.length; i++) {
       incompleteCourses.push(csCourses[i].courseCode + " " + csCourses[i].courseTitle );
   }
   }
+
+  
   
   if (course1323Taken) {
       incompleteCourses = incompleteCourses.filter(course => !course.startsWith('CS-1321') && !course.startsWith('CS-1324'));
